@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask isGroundLayer;
     public float groundCheckRadius;
+    public bool isAttacking;
+    public bool isFiring;
 
     // Start is called before the first frame update
     void Start()
@@ -79,12 +81,13 @@ public class PlayerController : MonoBehaviour
         // Fire
         if (Input.GetButtonDown("Fire1"))
         {
-            
+            anim.SetBool("isFiring", true);
         }
 
         // Jump Attack
         if (!isGrounded && Input.GetButtonDown("Jump"))
         {
+            anim.SetBool("isAttacking", true);
             rb.AddForce(Vector2.down * jumpForce);
         }
     }
