@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 31177117}
   - component: {fileID: 31177119}
   - component: {fileID: 31177118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101178703}
   - component: {fileID: 101178704}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 164737420}
   - component: {fileID: 164737422}
   - component: {fileID: 164737421}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367154990}
   - component: {fileID: 367154991}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 417995423}
   - component: {fileID: 417995424}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449991968}
   - component: {fileID: 449991969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hill4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483588864}
   - component: {fileID: 483588865}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 581888514}
   - component: {fileID: 581888515}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 965886532}
   - component: {fileID: 965886534}
   - component: {fileID: 965886533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081904693}
   - component: {fileID: 1081904694}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 1110602779}
   - component: {fileID: 1110602781}
   - component: {fileID: 1110602780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140509245}
   - component: {fileID: 1140509246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1199848648}
   - component: {fileID: 1199848649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hill3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,6 +1121,8 @@ GameObject:
   - component: {fileID: 1267105129}
   - component: {fileID: 1267105131}
   - component: {fileID: 1267105132}
+  - component: {fileID: 1267105133}
+  - component: {fileID: 1267105134}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1166,8 +1168,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 440443061
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 1420419055, guid: c1fb313a5cdd1444bafe8346cd238344, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1188,10 +1190,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267105128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.41, y: 0.87, z: 0}
+  m_LocalPosition: {x: -4.16, y: -0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2098991543}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1242,6 +1245,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1.12}
   m_EdgeRadius: 0
+--- !u!95 &1267105133
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267105128}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4fc1d767d49d404e8a91921d24b8f22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1267105134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267105128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cb7cb633c6fb64497e5948463dc036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  jumpForce: 0
+  isGrounded: 0
+  groundCheck: {fileID: 2098991543}
+  isGroundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckRadius: 0
 --- !u!1 &1285470450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285470451}
   - component: {fileID: 1285470452}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345529578}
   - component: {fileID: 1345529579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1427,7 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353682007}
   - component: {fileID: 1353682008}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428130524}
   - component: {fileID: 1428130525}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stones1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1587,7 @@ GameObject:
   - component: {fileID: 1468854270}
   - component: {fileID: 1468854272}
   - component: {fileID: 1468854271}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1618,7 +1661,7 @@ GameObject:
   - component: {fileID: 1477613072}
   - component: {fileID: 1477613074}
   - component: {fileID: 1477613073}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1538117369}
   - component: {fileID: 1538117370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hill2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1628113361}
   - component: {fileID: 1628113362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1851,7 @@ GameObject:
   - component: {fileID: 1628754789}
   - component: {fileID: 1628754791}
   - component: {fileID: 1628754790}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1881,7 +1924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1690050866}
   - component: {fileID: 1690050867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1939,7 +1982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775459638}
   - component: {fileID: 1775459639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +2040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788529099}
   - component: {fileID: 1788529100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872443046}
   - component: {fileID: 1872443047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clouds3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2113,7 +2156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074298242}
   - component: {fileID: 2074298243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2161,6 +2204,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 69.08907, y: 1.8649731}
   m_EdgeRadius: 0
+--- !u!1 &2098991542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098991543}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: GroundCheck
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098991543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098991542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1267105130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2128224527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2246,7 @@ GameObject:
   - component: {fileID: 2128224528}
   - component: {fileID: 2128224530}
   - component: {fileID: 2128224529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpThrough5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
