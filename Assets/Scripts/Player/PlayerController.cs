@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("hInput", Mathf.Abs(hInput));
         anim.SetBool("isGrounded", isGrounded);
-
         Debug.Log(hInput);
 
         // Grounded
@@ -90,6 +89,11 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isFiring", true);
         }
+        if (hInput != 0)
+        {
+            anim.SetBool("isFiring", false);
+        }
+
 
         // Jump Attack
         if (isGrounded == false && Input.GetButtonDown("Fire2"))
