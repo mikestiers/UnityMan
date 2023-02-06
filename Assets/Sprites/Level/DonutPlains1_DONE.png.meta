@@ -125,7 +125,7 @@ TextureImporter:
         width: 1733
         height: 420
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 5113
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,6 +154,27 @@ TextureImporter:
       bones: []
       spriteID: 33054c4b16bd6d04f9e20eef622e220d
       internalID: 1009510475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerUpRedMushroom
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d46e78a26608246a56a543dc45824c
+      internalID: -1637365985
       vertices: []
       indices: 
       edges: []
@@ -170,6 +191,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       DonutPlains1_DONE_0: 840251647
+      PowerUpRedMushroom: -1637365985
       Level: 1009510475
   spritePackingTag: 
   pSDRemoveMatte: 0

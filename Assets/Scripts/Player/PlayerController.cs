@@ -96,4 +96,48 @@ public class PlayerController : MonoBehaviour
         if (hInput != 0)
             sr.flipX = (hInput < 0);
     }
+
+    public void IncreasedGravity()
+    {
+        rb.gravityScale = 5;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+            // do something
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+            // do something
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Powerup"))
+        {
+            // do something
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // do something
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        // do something
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        // do something
+    }
 }
