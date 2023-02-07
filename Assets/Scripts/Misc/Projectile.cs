@@ -21,14 +21,18 @@ public class Projectile : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!(collision.gameObject.CompareTag("Powerup") || collision.gameObject.CompareTag("Player")))
+        if (collision.gameObject.CompareTag("Powerup"))
         {
-            Debug.Log(gameObject.name);
-            Destroy(gameObject);
+            Destroy(gameObject, lifetime);
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject, lifetime);
         }
         else
         {
-            Destroy(gameObject, lifetime);
+            Debug.Log(collision.gameObject.tag);
+            Destroy(gameObject); 
         }
     }
 }
