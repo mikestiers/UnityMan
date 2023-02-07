@@ -104,10 +104,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Powerup"))
-        {
-            // do something
-        }
+        // do something
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -128,7 +125,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // do something
+        if (collision.gameObject.CompareTag("Powerup"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)

@@ -19,4 +19,16 @@ public class Projectile : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
         Destroy(gameObject, lifetime);
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!(collision.gameObject.CompareTag("Powerup") || collision.gameObject.CompareTag("Player")))
+        {
+            Debug.Log(gameObject.name);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject, lifetime);
+        }
+    }
 }
